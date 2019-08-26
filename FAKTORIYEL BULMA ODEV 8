@@ -1,0 +1,21 @@
+'''8. Pozitif bir tamsayının faktöriyelini alan bir fonksiyon yazınız.'''
+
+def faktoriyel(sayi):
+    if sayi==0:
+        return 1
+
+
+    elif sayi==1:
+        return 1
+
+
+    else:
+        carpim=1
+        for i in range(2,sayi+1):
+            carpim*=i
+        return carpim
+
+
+while True:
+    sayi=int(input("faktoriyelini almak istediginiz sayiyi giriniz:"))
+    print("{} sayisinin faktoriyel olarak degeri   = ".format(sayi),faktoriyel(sayi))
