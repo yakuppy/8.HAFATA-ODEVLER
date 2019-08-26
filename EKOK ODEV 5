@@ -1,0 +1,44 @@
+def ekok(a,b):
+    liste1=[]
+    liste2=[]
+    ortakliste=[]
+
+    if a>=b:
+
+        for i in range(1,a+1):
+            k=a*i
+            liste1.append(k)
+        for i in  range(1,a+1):
+            c=b*i
+            liste2.append(c)
+        for i in liste1:
+            for j in liste2:
+                if i==j:
+                    ortakliste.append(i)
+
+    elif b>a:
+
+        for i in range(1,b+1):
+            k=a*i
+            liste1.append(k)
+        for i in  range(1,b+1):
+            c=b*i
+            liste2.append(c)
+        for i in liste1:
+            for j in liste2:
+                if i==j:
+                    ortakliste.append(i)
+
+
+    return ortakliste[0]
+
+
+
+
+
+while True:
+    sayi1=int(input("ilk sayiyi giriniz   :"))
+    sayi2 = int(input("ikinci sayiyi giriniz   :"))
+
+    print("girmis oldugunuz sayilarin ekoku     :",ekok(sayi1,sayi2))
+
