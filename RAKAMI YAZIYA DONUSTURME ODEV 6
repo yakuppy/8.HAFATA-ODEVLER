@@ -1,0 +1,18 @@
+'''6. Kullanıcıdan 2 basamaklı bir sayı alın ve bu sayının okunuşunu bulan bir fonksiyon yazın. Örnek: 97 ---------> Doksan Yedi'''
+
+def donusum(sayi):
+    birler=[" ","bir","iki","uc","dort","bes","alti","yedi","sekiz","dokuz"]
+    onlar = [" ", "on", "yirmi", "otuz", "kirk", "elli", "altmis", "yetmis", "seksen", "doksan"]
+
+
+    return  (onlar[sayi//10]+birler[sayi%10])
+
+
+
+while True:
+    sayi=int(input("iki basamakli sayiyi giriniz   :"))
+
+
+    print("girmis oldugunuz sayinin okunusu     :",donusum(sayi))
+
+
