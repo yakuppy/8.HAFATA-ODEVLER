@@ -1,0 +1,16 @@
+'''7. 1'den 100'e kadar olan sayılardan pisagor üçgeni oluşturanları ekrana yazdıran bir fonksiyon yazın.(a <= 100,b <= 100)'''
+
+def pisagaor():
+    liste=[]
+    for x in range(1,101):
+        for y in range(1,101):
+            if y>x:
+                z=(x**2+y**2)**0.5
+                if z==int(z):
+                    liste.append([x,y,int(z)])
+    for i in liste:
+        print(i)
+
+
+
+print(pisagaor())
