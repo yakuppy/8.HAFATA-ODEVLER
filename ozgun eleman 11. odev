@@ -1,0 +1,16 @@
+'''11. Verilen bir listenin içindeki özgün elemanları ayırıp yeni bir liste olarak veren bir fonksiyon yazınız.
+Örnek Liste : [1,2,3,3,3,3,4,5,5] Özgün Liste : [1, 2, 3, 4, 5]'''
+
+def ozgun(liste):
+    ozgun_liste = set()
+
+
+    for i in liste:
+        ozgun_liste.add(i)
+        son = []
+        for a in ozgun_liste:
+            son.append(a)
+    return son
+
+liste=[1,2,3,3,3,3,4,5,5]
+print(ozgun(liste))
